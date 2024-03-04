@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+.calculator{
+    display: grid;
+    margin: auto;
+    width: 300px;
+    height: 600px;
+    border-radius: 20px;
+    border: 5px solid gray;
+    background-color: black;
+    grid-template-areas:
+    "a a a a"
+    "b c d divide"
+    "seven eight nine multipl"
+    "four five six minus"
+    "one two three plus"
+    "zer zer decima equal";
+}
+
+.calculator-display{
+    color: white;
+    background-color: black;
+    font-size: 40px;
+    padding-top: 100px;
+    grid-area: a;
+    margin: 20px;
+    justify-self: right;
+}
+
+.percent{
+    position: d;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.add{
+    grid-area: plus;
+}
+
+.substract{
+    grid-area: minus;
+}
+
+.multiply{
+    grid-area: multipl;
+}
+
+.divide{
+    grid-area: divide;
+}
+
+
+
+.clear{
+    grid-area: b;
+}
+
+.negative{
+    grid-area: c;
+}
+
+.decimal{
+    grid-area: decima;
+}
+
+.nine{
+    grid-area: nine;
+}
+
+.eight{
+    grid-area: eight;
+}
+
+.seven{
+    grid-area: seven;
+}
+
+.six{
+    grid-area: six;
+}
+
+.five{
+    grid-area: five;
+}
+
+.four{
+    grid-area: four;
+}
+
+.three{
+    grid-area: three;
+}
+
+.two{
+    grid-area: two;
+}
+
+.one{
+    grid-area: one;
+}
+
+.calculator-button{
+    width: 50px;
+    border-radius: 1000px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.zero{
+    text-align: center;
+    grid-area: zer;
+    padding-right: 110px;
+}
+
+button:hover{
+    transition: all 1s ease;
+    background-color: gray;
+}
