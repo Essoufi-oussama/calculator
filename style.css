@@ -12,11 +12,15 @@
     background-color: black;
     grid-template-areas:
     "a a a a"
-    "b c d divide"
+    "b d c divide"
     "seven eight nine multipl"
     "four five six minus"
     "one two three plus"
-    "zer zer decima equal";
+    "zer  decima percen equal";
+}
+
+.percent{
+    grid-area: percen;
 }
 
 .calculator-display{
@@ -29,7 +33,7 @@
     justify-self: right;
 }
 
-.percent{
+.backdpace{
     position: d;
 }
 
@@ -111,11 +115,6 @@
     font-size: 18px;
 }
 
-.zero{
-    text-align: center;
-    grid-area: zer;
-    padding-right: 110px;
-}
 
 button:hover{
     transition: all 0.3s ease;

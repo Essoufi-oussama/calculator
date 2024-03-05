@@ -19,6 +19,7 @@ document.querySelector(".calculator").addEventListener("click", function (event)
     } else if (classList.contains('equal')) {
         if (storeNumber[0] !== undefined && storeNumber[1] !== undefined){
             display.innerHTML = operate(storeNumber[0], display.innerHTML, storeNumber[1]);
+            storeNumber = [];
         } else{
             storeNumber[0] = display.innerHTML;
         }
@@ -37,6 +38,11 @@ document.querySelector(".calculator").addEventListener("click", function (event)
         } else {
             display.innerHTML = '-' + display.innerHTML;
         }
+    } else if (classList.contains('backspace')){
+        if (display.innerText.length <= 1) {
+            display.innerText = '0';
+        } else {
+        display.innerHTML = display.innerText.substring(0, display.innerText.length - 1);}
     }
 });
 
