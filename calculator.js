@@ -29,7 +29,7 @@ document.querySelector(".calculator").addEventListener("click", function (event)
     } else if (classList.contains('percent')){
         display.innerHTML = +display.innerHTML / 100;
     } else if (classList.contains('decimal')){
-        if (display.innerText.slice(-1) !== '.'){
+        if (!display.innerText.includes('.')){
             display.innerHTML += '.';}
     } else if (classList.contains('negative')){
         console.log(display.innerHTML[0])
